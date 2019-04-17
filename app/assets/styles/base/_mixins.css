@@ -1,6 +1,6 @@
 @define-mixin atSmall {
     @media (min-width: 530px) {
-        @mixin-content;
+        @mixin-content; /*literal placeholder for what to change*/
     }
 }
 
@@ -13,5 +13,13 @@
 @define-mixin atLarge {
     @media (min-width: 1200px) {
         @mixin-content;
+    }
+}
+
+@define-mixin clearFix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
     }
 }
