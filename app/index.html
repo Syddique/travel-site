@@ -17,6 +17,7 @@
       content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you."
     />
     <link rel="stylesheet" href="temp/styles/styles.css" />
+    <script src="/temp/scripts/Vendor.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -92,7 +93,9 @@
             We create soul restoring journeys that inspire you to be you.
           </p>
           <p>
-            <a href="#" class="btn btn--orange btn--large open-modal">Get Started Today</a>
+            <a href="#" class="btn btn--orange btn--large open-modal"
+              >Get Started Today</a
+            >
           </p>
         </div>
       </div>
@@ -117,9 +120,9 @@
         </h3>
 
         <div class="wrapper wrapper--medium wrapper--b-margin">
-          <img
+          <img class="lazyload"
             sizes="(min-width: 970px) 976px, 100vw"
-            srcset="
+            data-srcset="
               assets/images/first-trip-low-res.jpg  565w,
               assets/images/first-trip.jpg          976w,
               assets/images/first-trip-hi-dpi.jpg  1952w
@@ -135,7 +138,7 @@
             <picture>
               <source
                 sizes="404px"
-                srcset="
+                data-srcset="
                   assets/images/our-start.jpg        404w,
                   assets/images/our-start-hi-dpi.jpg 808w
                 "
@@ -143,14 +146,14 @@
               />
               <source
                 sizes="320px"
-                srcset="
+                data-srcset="
                   assets/images/our-start-portrait.jpg        382w,
                   assets/images/our-start-portrait-hi-dpi.jpg 764w
                 "
                 media="(min-width: 800px)"
               />
-              <img
-                srcset="
+              <img class="lazyload"
+                data-srcset="
                   assets/images/our-start-landscape.jpg         800w,
                   assets/images/our-start-landscape-hi-dpi.jpg 1600w
                 "
@@ -275,7 +278,7 @@
 
     <div
       id="testimonials"
-      class="page-section page-section--no-b-padding-until-large page-section--testimonials"
+      class="page-section page-section--no-b-padding-until-large page-section--testimonials lazyload"
       data-matching-link="#testimonials-link"
     >
       <div class="wrapper wrapper--no-padding-until-large">
@@ -292,9 +295,9 @@
           <div class="row__large-4">
             <div class="testimonial">
               <div class="testimonial__photo">
-                <img
+                <img class="lazyload"
                   sizes="160px"
-                  srcset="
+                  data-srcset="
                     assets/images/testimonial-jane.jpg        160w,
                     assets/images/testimonial-jane-hi-dpi.jpg 320w
                   "
@@ -318,9 +321,9 @@
           <div class="row__large-4">
             <div class="testimonial">
               <div class="testimonial__photo">
-                <img
+                <img class="lazyload"
                   sizes="160px"
-                  srcset="
+                  data-srcset="
                     assets/images/testimonial-john.jpg        160w,
                     assets/images/testimonial-john-hi-dpi.jpg 320w
                   "
@@ -342,9 +345,9 @@
           <div class="row__large-4">
             <div class="testimonial testimonial--last">
               <div class="testimonial__photo">
-                <img
+                <img class="lazyload"
                   sizes="160px"
-                  srcset="
+                  data-srcset="
                     assets/images/testimonial-cat.jpg        160w,
                     assets/images/testimonial-cat-hi-dpi.jpg 320w
                   "
@@ -374,7 +377,9 @@
             >Copyright &copy; 2016 Clear View Escapes. All rights
             reserved.</span
           >
-          <a class="btn btn--orange site-footer--heavy-weight open-modal" href="#"
+          <a
+            class="btn btn--orange site-footer--heavy-weight open-modal"
+            href="#"
             >Get in Touch</a
           >
         </p>
@@ -383,31 +388,51 @@
 
     <div class="modal">
       <div class="modal__inner">
-          <h2 class="section-title section-title--blue section-title--less-margin">
-              <img
-                class="section-title__icon"
-                src="assets/images/icons/mail.svg"
-              />Get in <strong>Touch</strong>
-            </h2>
-            <div class="wrapper wrapper--narrow">
-              <p class="modal__description">
-                We will have an online order system in place soon. Until then, connect
-                with us on any of the platforms below!
-              </p>
-            </div>
-      
-            <div class="social-icons">
-              <a href="#" class="social-icons__icon"><object class="icon" data="assets/images/icons/facebook.svg"></object></a>
-              <a href="#" class="social-icons__icon"><object class="icon" data="assets/images/icons/instagram.svg"></object></a>
-              <a href="#" class="social-icons__icon"><object class="icon" data="assets/images/icons/twitter.svg"></object></a>
-              <a href="#" class="social-icons__icon"><object class="icon" data="assets/images/icons/youtube.svg"></object></a>
-      
-            </div>
+        <h2
+          class="section-title section-title--blue section-title--less-margin"
+        >
+          <img
+            class="section-title__icon"
+            src="assets/images/icons/mail.svg"
+          />Get in <strong>Touch</strong>
+        </h2>
+        <div class="wrapper wrapper--narrow">
+          <p class="modal__description">
+            We will have an online order system in place soon. Until then,
+            connect with us on any of the platforms below!
+          </p>
+        </div>
+
+        <div class="social-icons">
+          <a href="#" class="social-icons__icon"
+            ><object
+              class="icon"
+              data="assets/images/icons/facebook.svg"
+            ></object
+          ></a>
+          <a href="#" class="social-icons__icon"
+            ><object
+              class="icon"
+              data="assets/images/icons/instagram.svg"
+            ></object
+          ></a>
+          <a href="#" class="social-icons__icon"
+            ><object
+              class="icon"
+              data="assets/images/icons/twitter.svg"
+            ></object
+          ></a>
+          <a href="#" class="social-icons__icon"
+            ><object
+              class="icon"
+              data="assets/images/icons/youtube.svg"
+            ></object
+          ></a>
+        </div>
       </div>
-      <div class="modal__close">    
+      <div class="modal__close">
         X
       </div>
-
     </div>
 
     <script src="/temp/scripts/App.js"></script>
